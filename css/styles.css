@@ -1,0 +1,55 @@
+:root {
+  --bg-main: #0f172a;
+  --bg-sec: #020617;
+  --text-main: #e5e7eb;
+  --accent: #38bdf8;
+  --hover: #0ea5e9;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(120deg, #020617, #0f172a);
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--hover);
+}
+
+.btn-outline-info {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline-info:hover {
+  background-color: var(--accent);
+  color: #020617;
+}
+
+.card {
+  background-color: var(--bg-sec);
+  border: none;
+  color: var(--text-main);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  transition: 0.3s ease;
+}
